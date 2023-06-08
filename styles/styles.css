@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container {
+    width: 100%;
+    height: 100%;
+    background: hsl(226, 43%, 10%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 10px;
+    grid-gap: 20px;
+  }
+  .first-column {
+    width: 240px;
+    height: 450px;
+    background: hsl(235, 46%, 20%);
+    border-radius: 20px;
+  }
+  .more-info {
+    width: 100%;
+  height: 320px;
+  border-radius: 20px;
+  background: hsl(246, 80%, 60%);
+  position: relative;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  }
+  .more-info p {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: hsl(236, 100%, 87%);
+  }
+  .more-info h1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+  /* profile image */
+  .profile-img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  } 
+  /* css on the daily-weekly-monthly section */
+  .D-W-M {
+    width: 100%;
+    height: 130px;
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 10%;
+    flex-direction: column;
+  }
+  /* this is my css to style all columns and rows */
+  .second-column , .third-column , .forth-column {
+    width: 240px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-direction: column;
+  }
+  .first-row, .second-row {
+    width: 100%;
+    height: 215px;
+    border-radius:20px;
+    position: relative;
+    overflow: hidden;
+}
+.first-row{
+    background:hsl(15, 100%, 70%);
+}
+.first-row svg{
+    position: absolute;
+    right: 10%;
+    top: -5%;
+}
+.row-column-data{
+    width: 100%;
+    height: 168px;
+    background:hsl(235, 45%, 61%);
+    position: absolute;
+    bottom: 0;
+    border-radius:20px;
+    font-family: "Rubik", sans-serif;
+    color:#fff;
+}
+.row-column-data p:first-child{
+    font-size: 18px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-weight: bolder;
+}
+.row-column-data h1{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    letter-spacing: 2px;
+}
+.row-column-data p:last-child{
+    position: absolute;
+    bottom:15%;
+    left: 10%;
+    color: hsl(236, 100%, 87%);
+    font-weight: bold;
+}
+.second-row{
+    background:hsl(145, 58%, 55%);
+}
+.second-row svg{
+    position: absolute;
+}
+.second-row svg{
+    position: absolute;
+    right: 10%;
+}
+.second-row .row-column-data{
+    background:hsl(235, 46%, 20%);
+}
+.third-column .first-row{
+    background:hsl(195, 74%, 62%);
+}
+.third-column .second-row{
+    background:hsl(264, 64%, 52%);
+}
+
+.forth-column .first-row{
+    background:hsl(348, 100%, 68%);
+}
+.forth-column .second-row svg{
+    top: -4%;
+}
+.forth-column .second-row{
+    background:hsl(43, 84%, 65%);
+}
+@media  only screen and (max-width:1145px) {
+    main{
+        height: 100%;
+    }
+    .main-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto;
+    }
+}
+  /* this is my section to style the dots */
+.three-fullstops{
+    width: 5px;
+    height: 5px;
+    background:hsl(236, 100%, 87%);
+    border-radius:50%;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+}
+.three-fullstops::after , .three-fullstops::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: hsl(236, 100%, 87%);
+    position: absolute;
+    border-radius:50%;
+}
+.three-fullstops::before{
+    right: 10px;
+}
+.three-fullstops::after{
+    left: 10px;
+}
